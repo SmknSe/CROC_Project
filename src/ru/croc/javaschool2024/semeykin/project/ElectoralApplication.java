@@ -193,7 +193,7 @@ public class ElectoralApplication {
             System.out.println("Введите номер участка для регистрации:");
             try {
                 long stationId = scanner.nextLong();
-                userService.choosePollingStation(user, stationId);
+                user = userService.choosePollingStation(user, stationId);
                 scanner.nextLine();
                 break;
             } catch (SQLException e) {

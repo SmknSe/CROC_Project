@@ -19,7 +19,7 @@ public record User (
             Long station_id
     ) {
         if (passportId < 1000000000 || passportId > 9999999999L)
-            throw new IllegalArgumentException("Incorrect password id provided: "+passportId
+            throw new IllegalArgumentException("Incorrect passport id provided: "+passportId
                     +"\n10 digits required");
         this.passportId = passportId;
         this.fullName = fullName;

@@ -17,11 +17,12 @@ public class UserService {
         pollingStationDAO = new PollingStationDAO();
     }
 
-    public void choosePollingStation(User user, long newStationId) throws SQLException {
+    public User choosePollingStation(User user, long newStationId) throws SQLException {
         userDAO.updateStationId(user.passportId(), newStationId);
         pollingStationDAO.updateRegisteredUsersAmount(newStationId,true);
         if (user.station_id() != null)
             pollingStationDAO.updateRegisteredUsersAmount(user.station_id(),false);
+        return userDAO.getUserById(user.passportId());
     }
 
     public User register(User user) throws SQLException {

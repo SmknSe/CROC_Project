@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="CROC_Project:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/CROC_Project_jar</output-path>
+    <root id="archive" name="CROC_Project.jar">
+      <element id="module-output" name="CROC_Project" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/lib/h2-2.2.224.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

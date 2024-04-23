@@ -1,0 +1,23 @@
+PollingStation 1:
+	address: Улица Пушкина дом 10
+	capacity: 150
+	boxesAmount: 5
+	registeredUsersAmount: 3
+Registered Users:
+COMMISSION_MEMBER:
+	User 5678901234:
+		fullName: Дмитриев Дмитрий Дмитриевич
+		phone: 79997778899
+		role: COMMISSION_MEMBER
+		station_id: 1
+	User 6789012345:
+		fullName: Сергеев Сергей Сергеевич
+		phone: 79990001122
+		role: COMMISSION_MEMBER
+		station_id: 1
+ELECTOR:
+	User 4518228467:
+		fullName: sergey
+		phone: 89999999999
+		role: ELECTOR
+		station_id: 1
